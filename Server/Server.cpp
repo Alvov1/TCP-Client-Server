@@ -42,7 +42,7 @@ void Server::listenClients() {
     std::cout << "Listening" << std::endl;
     do {
         for(; listedMessages < messages.size(); ++listedMessages)
-            std::cout << "Message " << messages[listedMessages] << std::endl;
+            std::cout << listedMessages + 1 << ". Message " << messages[listedMessages] << std::endl;
 
 #ifdef _WIN32
         int ev_cnt = WSAPoll(pfd, sizeof(pfd) / sizeof(pfd[0]), 1000);

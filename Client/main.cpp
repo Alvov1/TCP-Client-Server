@@ -10,7 +10,7 @@ int main(int argc, char** argv) {
     client.connectTo();
 
     for(auto i = 0; i < 100; ++i) {
-        auto value = rand() % 1048576;
+        auto value = rand();
         std::cout << "Sent " << value << std::endl;
 
         client.sendMessage(LengthWrapper(value));

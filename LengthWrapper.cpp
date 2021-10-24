@@ -54,7 +54,7 @@ long long LengthWrapper::decodeL() const {
 template<typename T>
 size_t biteLength(T value) {
     size_t ind = 0;
-    for(int i = 1; i <= value; i *= 2, ++ind);
+    for(long long i = 1; i <= value; i *= 2, ++ind);
     return (ind + 7) / 8; // Round up division
 }
 
