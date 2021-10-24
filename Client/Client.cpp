@@ -76,9 +76,6 @@ int Client::sendMessage(const LengthWrapper &value) const {
             break;
         }
 
-//    if(sendCount == ptrLen)
-//        std::cout << "Sending was successful. " << std::endl;
-
     return sendCount;
 }
 
